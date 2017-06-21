@@ -1,0 +1,24 @@
+<div class="container">
+
+
+  <div class="input-wrap">
+    <label for="">Your First Name</label>
+    <input ng-model="firstName" type="text" name="firstName" value=""><br>
+    <label for="">Your Last Name</label>
+    <input ng-model="lastName" type="text" name="lastName" value="">
+  </div>
+
+  <div class="btn-wrap">
+    <div class="btn btn-default" ng-click="refreshJokes(firstName, lastName)">Refresh Jokes</div>
+  </div>
+
+
+
+  <div class="joke-wrap">
+    <div class="joke animation" ng-repeat="joke in jokes">
+      <div class="joke-id">ID: {{joke.id}}</div>
+      <div class="joke-text">{{joke.joke}}</div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,79 @@
+html {
+  overflow-y: scroll;
+}
+
+body{
+  margin: 0;
+}
+
+header{
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+  color: #fff;
+}
+
+.joke{
+  display: flex;
+  margin: 10px 0;
+}
+
+.joke-id{
+  flex: -1;
+  flex-wrap: nowrap;
+  padding: 10px 20px;
+  background-color: grey;
+  color: #fff;
+}
+
+.joke-text{
+  padding: 10px 20px;
+  flex: 1;
+}
+
+.input-wrap{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.btn-wrap{
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+/* The starting CSS styles for the enter animation */
+.animation.ng-enter {
+  opacity: 0;
+  transition:0.2s linear all;
+  /*transform:translateY(-100%);*/
+  position: relative;
+  right: -100%;
+}
+.animation.ng-enter-stagger {
+  transition-delay: 0.1s;
+}
+
+/* The finishing CSS styles for the enter animation */
+.animation.ng-enter.ng-enter-active {
+  opacity: 1;
+  /*transform:translateY(0%);*/
+  position: relative;
+  right: 0;
+}
+
+/* The starting CSS styles for the enter animation */
+.animation.ng-leave {
+  transition:0.2s linear all;
+  /*transform:translateY(-100%);*/
+  position: relative;
+  left: 0px;
+}
+
+/* The finishing CSS styles for the leave animation */
+.animation.ng-leave.ng-leave-active {
+  /*transform:translateY(0%);*/
+  position: relative;
+  left: -100%;
+}
